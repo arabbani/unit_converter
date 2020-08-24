@@ -1,6 +1,7 @@
 ## 1.1.2
 
 - Changelog file order changes.
+- Code quality improvement
 
 ## 1.1.1
 
