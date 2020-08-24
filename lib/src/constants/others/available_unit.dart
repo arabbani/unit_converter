@@ -1,0 +1,96 @@
+import '../../enums/converter.dart';
+import '../../models/unit.dart';
+import '../unit_details/acceleration_unit_details.dart';
+import '../unit_details/area_unit_details.dart';
+import '../unit_details/blood_cholesterol_unit_details.dart';
+import '../unit_details/blood_glucose_unit_details.dart';
+import '../unit_details/capacitance_unit_details.dart';
+import '../unit_details/data_rate_unit_details.dart';
+import '../unit_details/data_unit_details.dart';
+import '../unit_details/density_unit_details.dart';
+import '../unit_details/dynamic_viscocity_unit_details.dart';
+import '../unit_details/electric_charge_unit_details.dart';
+import '../unit_details/electric_current_unit_details.dart';
+import '../unit_details/electric_potential_unit_details.dart';
+import '../unit_details/electrical_conductance_unit_details.dart';
+import '../unit_details/electrical_resistance_unit_details.dart';
+import '../unit_details/energy_unit_details.dart';
+import '../unit_details/force_unit_details.dart';
+import '../unit_details/frequency_unit_details.dart';
+import '../unit_details/illuminance_unit_details.dart';
+import '../unit_details/inductance_unit_details.dart';
+import '../unit_details/kinematic_viscocity_unit_details.dart';
+import '../unit_details/length_unit_details.dart';
+import '../unit_details/luminance_unit_details.dart';
+import '../unit_details/magnetic_field_intensity_unit_details.dart';
+import '../unit_details/magnetic_flux_density_unit_details.dart';
+import '../unit_details/magnetic_flux_unit_details.dart';
+import '../unit_details/mass_flow_unit_details.dart';
+import '../unit_details/mass_fraction_unit_details.dart';
+import '../unit_details/mass_moment_of_inertia_unit_details.dart';
+import '../unit_details/mass_per_area_unit_details.dart';
+import '../unit_details/mass_unit_details.dart';
+import '../unit_details/mole_fraction_unit_details.dart';
+import '../unit_details/plane_angle_unit_details.dart';
+import '../unit_details/power_unit_details.dart';
+import '../unit_details/pressure_unit_details.dart';
+import '../unit_details/radioactivity_unit_details.dart';
+import '../unit_details/sound_unit_details.dart';
+import '../unit_details/speed_unit_details.dart';
+import '../unit_details/temperature_unit_details.dart';
+import '../unit_details/time_unit_details.dart';
+import '../unit_details/torque_unit_details.dart';
+import '../unit_details/volume_flow_per_area_unit_details.dart';
+import '../unit_details/volume_flow_unit_details.dart';
+import '../unit_details/volume_per_area_unit_details.dart';
+import '../unit_details/volume_unit_details.dart';
+import '../unit_details/water_hardness_unit_details.dart';
+
+/// Details of all the units of each `ConversionType`.
+final Map<Converter, Set<Unit>> availableUnit = {
+  Converter.acceleration: accelerationUnitDetails,
+  Converter.area: areaUnitDetails,
+  Converter.bloodCholesterol: bloodCholesterolUnitDetails,
+  Converter.bloodGlucose: bloodGlucoseUnitDetails,
+  Converter.capacitance: capacitanceUnitDetails,
+  Converter.data: dataUnitDetails,
+  Converter.dataRate: dataRateUnitDetails,
+  Converter.density: densityUnitDetails,
+  Converter.dynamicViscocity: dynamicViscocityUnitDetails,
+  Converter.electricCharge: electricChargeUnitDetails,
+  Converter.electricCurrent: electricCurrentUnitDetails,
+  Converter.electricPotential: electricPotentialUnitDetails,
+  Converter.electricalConductance: electricalConductanceUnitDetails,
+  Converter.electricalResistance: electricalResistanceUnitDetails,
+  Converter.energy: energyUnitDetails,
+  Converter.force: forceUnitDetails,
+  Converter.frequency: frequencyUnitDetails,
+  Converter.illuminance: illuminanceUnitDetails,
+  Converter.inductance: inductanceUnitDetails,
+  Converter.kinematicViscocity: kinematicViscocityUnitDetails,
+  Converter.length: lengthUnitDetails,
+  Converter.luminance: luminanceUnitDetails,
+  Converter.magneticFieldIntensity: magneticFieldIntensityUnitDetails,
+  Converter.magneticFlux: magneticFluxUnitDetails,
+  Converter.magneticFluxDensity: magneticFluxDensityUnitDetails,
+  Converter.mass: massUnitDetails,
+  Converter.massFlow: massFlowUnitDetails,
+  Converter.massFraction: massFractionUnitDetails,
+  Converter.massMomentOfInertia: massMomentOfInertiaUnitDetails,
+  Converter.massPerArea: massPerAreaUnitDetails,
+  Converter.moleFraction: moleFractionUnitDetails,
+  Converter.planeAngle: planeAngleUnitDetails,
+  Converter.power: powerUnitDetails,
+  Converter.pressure: pressureUnitDetails,
+  Converter.radioactivity: radioactivityUnitDetails,
+  Converter.sound: soundUnitDetails,
+  Converter.speed: speedUnitDetails,
+  Converter.temperature: temperatureUnitDetails,
+  Converter.time: timeUnitDetails,
+  Converter.torque: torqueUnitDetails,
+  Converter.volume: volumeUnitDetails,
+  Converter.volumeFlow: volumeFlowUnitDetails,
+  Converter.volumeFlowPerArea: volumeFlowPerAreaUnitDetails,
+  Converter.volumePerArea: volumePerAreaUnitDetails,
+  Converter.waterHardness: waterHardnessUnitDetails,
+};

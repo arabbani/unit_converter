@@ -33,7 +33,6 @@ Get the available units:
 ```dart
   var avilableUnits = areaConverter.units();
 ```
-See `units` method for more details.
 
 Each unit have a `name`(British spelling) and an `americanName`(American spelling) property. For units that have the same `americanName` as `name`, the `americanName` is null. So, it is always good to check for the availability of `americanName` before displaying it.
 ```dart

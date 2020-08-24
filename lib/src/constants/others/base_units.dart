@@ -1,0 +1,96 @@
+import '../../enums/acceleration_unit.dart';
+import '../../enums/area_unit.dart';
+import '../../enums/blood_cholesterol_unit.dart';
+import '../../enums/blood_glucose_unit.dart';
+import '../../enums/capacitance_unit.dart';
+import '../../enums/converter.dart';
+import '../../enums/data_rate_unit.dart';
+import '../../enums/data_unit.dart';
+import '../../enums/density_unit.dart';
+import '../../enums/dynamic_viscocity_unit.dart';
+import '../../enums/electric_charge_unit.dart';
+import '../../enums/electric_current_unit.dart';
+import '../../enums/electric_potential_unit.dart';
+import '../../enums/electrical_conductance_unit.dart';
+import '../../enums/electrical_resistance_unit.dart';
+import '../../enums/energy_unit.dart';
+import '../../enums/force_unit.dart';
+import '../../enums/frequency_unit.dart';
+import '../../enums/illuminance_unit.dart';
+import '../../enums/inductance_unit.dart';
+import '../../enums/kinematic_viscocity_unit.dart';
+import '../../enums/length_unit.dart';
+import '../../enums/luminance_unit.dart';
+import '../../enums/magnetic_field_intensity_unit.dart';
+import '../../enums/magnetic_flux_density_unit.dart';
+import '../../enums/magnetic_flux_unit.dart';
+import '../../enums/mass_flow_unit.dart';
+import '../../enums/mass_fraction_unit.dart';
+import '../../enums/mass_moment_of_inertia_unit.dart';
+import '../../enums/mass_per_area_unit.dart';
+import '../../enums/mass_unit.dart';
+import '../../enums/mole_fraction_unit.dart';
+import '../../enums/plane_angle_unit.dart';
+import '../../enums/power_unit.dart';
+import '../../enums/pressure_unit.dart';
+import '../../enums/radioactivity_unit.dart';
+import '../../enums/sound_unit.dart';
+import '../../enums/speed_unit.dart';
+import '../../enums/temperature_unit.dart';
+import '../../enums/time_unit.dart';
+import '../../enums/torque_unit.dart';
+import '../../enums/volume_flow_per_area_unit.dart';
+import '../../enums/volume_flow_unit.dart';
+import '../../enums/volume_per_area_unit.dart';
+import '../../enums/volume_unit.dart';
+import '../../enums/water_hardness_unit.dart';
+
+/// The base unit of each `ConversionType`.
+final Map<Converter, dynamic> baseUnits = {
+  Converter.acceleration: AccelerationUnit.metrePerSecondSquared,
+  Converter.area: AreaUnit.squareMetre,
+  Converter.bloodCholesterol: BloodCholesterolUnit.milliGramPerDeciLitre,
+  Converter.bloodGlucose: BloodGlucoseUnit.milliGramPerDeciLitre,
+  Converter.capacitance: CapacitanceUnit.farad,
+  Converter.data: DataUnit.bit,
+  Converter.dataRate: DataRateUnit.bitPerSecond,
+  Converter.density: DensityUnit.gramPerLitre,
+  Converter.dynamicViscocity: DynamicViscocityUnit.pascalSecond,
+  Converter.electricCharge: ElectricChargeUnit.coulomb,
+  Converter.electricCurrent: ElectricCurrentUnit.ampere,
+  Converter.electricPotential: ElectricPotentialUnit.volt,
+  Converter.electricalConductance: ElectricalConductanceUnit.siemens,
+  Converter.electricalResistance: ElectricalResistanceUnit.ohm,
+  Converter.energy: EnergyUnit.joule,
+  Converter.force: ForceUnit.newton,
+  Converter.frequency: FrequencyUnit.hertz,
+  Converter.illuminance: IlluminanceUnit.lux,
+  Converter.inductance: InductanceUnit.henry,
+  Converter.kinematicViscocity: KinematicViscocityUnit.squareMetrePerSecond,
+  Converter.length: LengthUnit.metre,
+  Converter.luminance: LuminanceUnit.candelaPerSquareMetre,
+  Converter.magneticFieldIntensity: MagneticFieldIntensityUnit.amperePerMetre,
+  Converter.magneticFlux: MagneticFluxUnit.weber,
+  Converter.magneticFluxDensity: MagneticFluxDensityUnit.tesla,
+  Converter.mass: MassUnit.kiloGram,
+  Converter.massFlow: MassFlowUnit.kiloGramPerSecond,
+  Converter.massFraction: MassFractionUnit.gramPerGram,
+  Converter.massMomentOfInertia: MassMomentOfInertiaUnit.kiloGramSquareMetre,
+  Converter.massPerArea: MassPerAreaUnit.kiloGramPerSquareMetre,
+  Converter.moleFraction: MoleFractionUnit.molePerMole,
+  Converter.planeAngle: PlaneAngleUnit.radian,
+  Converter.power: PowerUnit.joulePerSecond,
+  Converter.pressure: PressureUnit.pascal,
+  Converter.radioactivity: RadioactivityUnit.becquerel,
+  Converter.sound: SoundUnit.deciBel,
+  Converter.speed: SpeedUnit.metrePerSecond,
+  Converter.temperature: TemperatureUnit.kelvin,
+  Converter.time: TimeUnit.second,
+  Converter.torque: TorqueUnit.newtonMetre,
+  Converter.volume: VolumeUnit.cubicMetre,
+  Converter.volumeFlow: VolumeFlowUnit.cubicMetrePerSecond,
+  Converter.volumeFlowPerArea:
+      VolumeFlowPerAreaUnit.cubicMetrePerSecondPerSquareMetre,
+  Converter.volumePerArea: VolumePerAreaUnit.cubicMetrePerSquareMetre,
+  Converter.waterHardness: WaterHardnessUnit.milliMolePerLitre_CaCO3,
+};

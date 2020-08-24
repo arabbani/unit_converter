@@ -1,24 +1,22 @@
 import 'dart:math' show pow;
 
-import '../constant/others/conversion_factors.dart';
-import '../constant/others/misc.dart';
-import '../constant/others/prefix_name.dart';
-import '../constant/others/prefix_value.dart';
-import '../constant/others/symbol.dart';
-import '../constant/others/unit_system.dart';
-import '../enum/converter.dart';
-import '../enum/metric_prefix.dart';
-import '../enum/symbol_part.dart';
-import '../enum/unit_system.dart';
-import '../model/unit.dart';
+import '../constants/others/conversion_factors.dart';
+import '../constants/others/misc.dart';
+import '../constants/others/prefix_name.dart';
+import '../constants/others/prefix_value.dart';
+import '../constants/others/symbol.dart';
+import '../constants/others/unit_system.dart';
+import '../enums/converter.dart';
+import '../enums/metric_prefix.dart';
+import '../enums/symbol_part.dart';
+import '../enums/unit_system.dart';
+import '../models/unit.dart';
 
 /// Create symbol from `symbolParts`.
 String createSymbol(List<SymbolPart> symbolParts) {
+  assert(symbolParts != null || symbolParts.isNotEmpty,
+      '\'symbolParts\' cannot be null or empty');
   String symbolName = '';
-  if (symbolParts == null || symbolParts.isEmpty) {
-    assert(false, 'symbolParts cannot be null or empty');
-    return symbolName;
-  }
   for (var part in symbolParts) {
     symbolName += symbol[part];
   }
