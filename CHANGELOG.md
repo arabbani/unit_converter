@@ -12,3 +12,7 @@
 
 - Code cleanup.
 - Better API documentation.
+
+## 1.1.1
+
+- Bug fixes. (The previous verion was not working due to an issue with uninitialized variable). Please use the latest version.
