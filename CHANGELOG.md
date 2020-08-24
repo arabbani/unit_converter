@@ -1,10 +1,10 @@
-## 1.0.0
+## 1.1.2
 
-- Fully working version. Various types of converter added.
+- Changelog file order changes.
 
-## 1.0.0+1
+## 1.1.1
 
-- Proper commenting on public APIS.
+- Bug fixes. (The previous verion was not working due to an issue with uninitialized variable). Please use the latest version.
 
 ## 1.1.0
 
@@ -13,6 +13,10 @@
 - Code cleanup.
 - Better API documentation.
 
-## 1.1.1
+## 1.0.0+1
 
-- Bug fixes. (The previous verion was not working due to an issue with uninitialized variable). Please use the latest version.
+- Proper commenting on public APIS.
+
+## 1.0.0
+
+- Fully working version. Various types of converter added.
