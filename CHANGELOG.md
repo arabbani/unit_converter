@@ -1,3 +1,7 @@
+## 1.1.3
+
+- Internal cleanup
+
 ## 1.1.2
 
 - Changelog file order changes.

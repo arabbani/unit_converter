@@ -194,7 +194,6 @@ final Map<SymbolPart, String> symbol = {
   SymbolPart.singleQuote: '\'',
   SymbolPart.slug: 'slug',
   SymbolPart.space: ' ',
-  SymbolPart.space: ' ',
   SymbolPart.squarePerch: 'square perch',
   SymbolPart.stat: 'stat',
   SymbolPart.stilb: 'sb',
