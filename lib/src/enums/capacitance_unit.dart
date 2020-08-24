@@ -8,7 +8,7 @@ enum CapacitanceUnit {
   exaFarad,
   farad,
   femtoFarad,
-  gigFarad,
+  gigaFarad,
   hectoFarad,
   kiloFarad,
   megaFarad,
