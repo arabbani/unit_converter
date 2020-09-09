@@ -17,9 +17,7 @@ class UnitConverter<T> {
   final T _baseUnit;
 
   /// UnitConverter constructor
-  UnitConverter(this._type)
-      : _baseUnit = baseUnits[_type],
-        assert(_type != null) {
+  UnitConverter(this._type) : _baseUnit = baseUnits[_type] {
     // HACK : Initialize availableUnit by accessing unitCount
     if (availableUnit == null) {
       print('UnitCount: $unitCount');

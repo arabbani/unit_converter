@@ -50,5 +50,6 @@ export 'enums/water_hardness_unit.dart';
 
 /// Get an `UnitConverter` instance of type `type`.
 UnitConverter getConverter(Converter type) {
+  assert(type != null, 'Converter type must be provided');
   return UnitConverter(type);
 }

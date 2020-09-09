@@ -1,3 +1,7 @@
+## 1.3.0
+
+- Bug fixes
+
 ## 1.1.3
 
 - Internal cleanup
