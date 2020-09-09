@@ -16,7 +16,7 @@ import '../models/unit.dart';
 String createSymbol(List<SymbolPart> symbolParts) {
   assert(symbolParts != null || symbolParts.isNotEmpty,
       '\'symbolParts\' cannot be null or empty');
-  String symbolName = '';
+  var symbolName = '';
   for (var part in symbolParts) {
     symbolName += symbol[part];
   }
@@ -32,7 +32,7 @@ double conversionFactor<T>(Converter conversionType, T unitType) {
 T _enumFromString<T>(Iterable<T> values, String value) {
   return values.firstWhere(
     (type) =>
-        type.toString().split(".").last.toLowerCase() == value.toLowerCase(),
+        type.toString().split('.').last.toLowerCase() == value.toLowerCase(),
     orElse: () => null,
   );
 }
@@ -45,7 +45,7 @@ Converter _conversionTypeFromString(String value) {
 
 /// Get the string representation of the `enumType`.
 String stringFromEnum<T>(T enumType) {
-  return enumType.toString().split(".").last;
+  return enumType.toString().split('.').last;
 }
 
 /// Add conversion factor to base unit for unit `unitType`.
@@ -162,7 +162,7 @@ Set<Unit<T>> createUnitVariation<T>(
     var systemName = stringFromEnum(system);
     variationBaseUnitName += '_$systemName';
   }
-  for (MetricPrefix p in variations) {
+  for (var p in variations) {
     var variationName = prefixName[p];
     var prefix = prefixValue[p];
     var unit = _createUnitForVariation(

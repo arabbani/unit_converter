@@ -22,15 +22,15 @@ class UnitConverter<T> {
         assert(_type != null) {
     // HACK : Initialize availableUnit by accessing unitCount
     if (availableUnit == null) {
-      print("UnitCount: $unitCount");
+      print('UnitCount: $unitCount');
     }
   }
 
   /// Total number of units of this converter.
-  get unitCount => _availableUnit().length;
+  int get unitCount => _availableUnit().length;
 
   /// The base unit of this converter.
-  get baseUnit => unit(_baseUnit);
+  Unit<T> get baseUnit => unit(_baseUnit);
 
   /// Returns the result after converting the `value` from type `from` to type `to`.
   ///
@@ -45,8 +45,8 @@ class UnitConverter<T> {
           return SoundConverter()
               .convert(value, from as SoundUnit, to as SoundUnit);
         default:
-          final double fromOffset = conversionFactor(_type, from);
-          final double toOffset = conversionFactor(_type, to);
+          final fromOffset = conversionFactor(_type, from);
+          final toOffset = conversionFactor(_type, to);
           value *= fromOffset;
           value /= toOffset;
           return value;

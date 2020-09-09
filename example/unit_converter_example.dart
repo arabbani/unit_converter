@@ -1,6 +1,6 @@
 import 'package:unit_converter/unit_converter.dart';
 
-main() {
+void main() {
   var areaConverter = getConverter(Converter.area);
   areaConverter.convert(
     value: 2,
